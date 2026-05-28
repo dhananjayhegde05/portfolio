@@ -41,7 +41,7 @@ function App() {
 
               </div>
 
-              <span className="hidden md:block text-gray-300 font-medium">
+              <span className="text-sm sm:text-base text-gray-300 font-medium">
                 Dhananjay Hegde
               </span>
 
