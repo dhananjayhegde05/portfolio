@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import resume from "./assets/resume.pdf"
+import profile from "./assets/profile.png"
 import {
   FaPython,
   FaReact,
@@ -158,10 +159,10 @@ function App() {
         {/* HERO SECTION */}
         <section
           id="home"
-          className="flex items-center min-h-screen px-6 pt-32 md:pt-0"
+          className="flex items-center min-h-screen px-6 pt-36 md:pt-12"
         >
 
-          <div className="max-w-7xl mx-auto w-full">
+            <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
             <motion.div
               initial={{ opacity: 0, y: 40 }}
@@ -176,7 +177,7 @@ function App() {
               </p>
 
               {/* MAIN HEADING */}
-              <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight max-w-5xl">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight max-w-3xl">
 
               <span className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
               Building modern
@@ -189,7 +190,7 @@ function App() {
               </h1>
 
               {/* DESCRIPTION */}
-              <p className="text-gray-300 text-lg md:text-2xl leading-relaxed max-w-3xl">
+              <p className="text-gray-300 text-lg md:text-2xl leading-relaxed max-w-2xl">
 
                 MCA graduate focused on FastAPI, REST APIs,
                 authentication systems, workflow platforms,
@@ -199,7 +200,7 @@ function App() {
               </p>
 
               {/* BUTTONS */}
-              <div className="flex flex-col sm:flex-row gap-5 pt-4">
+              <div className="flex flex-col sm:flex-row gap-5 pt-8">
 
                 <a
                   href="https://github.com/dhananjayhegde05"
@@ -240,6 +241,48 @@ function App() {
               </div>
 
             </motion.div>
+            
+          {/* PROFILE IMAGE */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            className="flex justify-center lg:justify-end mt-10 lg:-mt-6"
+          >
+
+            <div className="relative">
+
+              {/* Glow Effect */}
+              <div className="absolute inset-0 bg-gray-500/20 blur-3xl rounded-[40px]"></div>
+              
+
+              {/* Image */}
+              <img
+                src={profile}
+                alt="Dhananjay Hegde"
+                className="relative 
+                w-[320px] 
+                sm:w-[380px] 
+                lg:w-[500px] 
+                h-[420px] 
+                lg:h-[500px]
+                object-cover 
+                object-top
+                rounded-[40px] 
+                border border-[#2d333b] 
+                shadow-2xl
+                contrast-105 
+                brightness-95
+                hover:scale-[1.02]
+                transition
+                duration-500"
+              />
+
+            </div>
+
+          </motion.div>
+
+
 
           </div>
 
@@ -548,7 +591,7 @@ function App() {
 
         <div className="max-w-7xl mx-auto">
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.9fr] gap-10 xl:gap-20 items-center">
 
             {/* LEFT SIDE */}
             <div>
@@ -625,7 +668,7 @@ function App() {
 
             </h2>
 
-            <p className="text-gray-300 text-lg md:text-xl mt-8 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-gray-300 text-lg md:text-xl mt-8 leading-relaxed max-w-2xl mx-auto">
 
               Open to software engineering, backend development,
               Python, FastAPI, and AI-focused opportunities.
