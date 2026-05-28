@@ -75,13 +75,14 @@ function App() {
               href="#about"
               className="hover:text-white transition duration-300"
             >
-              About 
+              About
+              </a> 
             <a
               href="#contact"
               className="hover:text-white transition duration-300"
             >
               Contact
-            </a>
+            
           </a>
 
             </div>
@@ -157,7 +158,7 @@ function App() {
         {/* HERO SECTION */}
         <section
           id="home"
-          className="flex items-center min-h-screen px-6"
+          className="flex items-center min-h-screen px-6 pt-32 md:pt-0"
         >
 
           <div className="max-w-7xl mx-auto w-full">
@@ -175,7 +176,7 @@ function App() {
               </p>
 
               {/* MAIN HEADING */}
-              <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight max-w-5xl">
 
               <span className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
               Building modern
@@ -198,7 +199,7 @@ function App() {
               </p>
 
               {/* BUTTONS */}
-              <div className="flex flex-wrap gap-5 pt-4">
+              <div className="flex flex-col sm:flex-row gap-5 pt-4">
 
                 <a
                   href="https://github.com/dhananjayhegde05"
